@@ -1,0 +1,243 @@
+@import "components/base";
+@import "mobile";
+
+
+@media screen and (min-width: 768px) {
+    header  {
+        .mobile-icon {
+            display:none;
+        }
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    header  {
+        .info {
+            display: none;
+        }
+        .mobile-icon {
+            display:flex;
+        }
+        padding: 0 56px!important;
+    }
+
+    .line_2 .mobile-icon {
+        display: none;
+    }
+    .horizontal-menu {
+        padding: 0 56px!important;
+    }
+}
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px dotted #337fd2;
+  padding-bottom: 1px;
+  color: #337fd2;
+}
+.info {
+  display: flex;
+}
+.adress {
+  padding-right: 30px;
+}
+.cabinet,
+.city {
+  display: flex;
+  align-items: center;
+}
+.cabinet img,
+.city img {
+  margin-right: 10px;
+}
+.triangle {
+  margin-left: 5px;
+  padding-top: 5px;
+}
+p1 {
+  padding-right: 5px;
+}
+.text_style {
+  display: flex;
+}
+.line_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.text_1 {
+  padding-left: 40px;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #313d50;
+}
+.text_2 {
+  width: 100px;
+  margin-top: 7%;
+  margin-left: 4%;
+}
+.text_2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #3b3b3b;
+  display: flex;
+}
+.elipse {
+  width: 29px;
+  height: 29px;
+  left: 1205px;
+  top: 83px;
+  border-radius: 50%;
+  background: #e65555;
+  display: flex;
+  align-items: center;
+}
+.text_numb {
+  color: #ffffff;
+  display: flex;
+  padding-left: 6px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+
+  color: #ffffff;
+}
+.summa_rub {
+  white-space: nowrap;
+  padding: 0 30px;
+  display: flex;
+}
+.search {
+  background: #ffffff;
+  display: inline-flex;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  border-radius: 53px;
+  width: 430px;
+  height: 43px;
+  max-width: 430px;
+  min-width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search img {
+  padding-right: 20px;
+  display: flex;
+}
+.search_text {
+  display: flex;
+  padding-left: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #8e8e8e;
+}
+.mobile-icon {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  
+  img {
+    margin-right: 20px;
+  }
+}
+
+.nubbcifr {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 168.22%;
+  /* or 27px */
+  text-transform: uppercase;
+  color: #3b3b3b;
+  margin-bottom: 7px;
+  white-space: nowrap;
+}
+.line_3 {
+  left: -0.07%;
+  right: 0%;
+  top: 82.32%;
+  bottom: -9.39%;
+
+  background: #313d50;
+}
+
+.horizontal-menu {
+    display:flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #313D50;
+    padding: 0 40px;
+
+    .item {
+        white-space: nowrap;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 100%;
+        color: #fff;
+        padding: 0 20px;
+    }
+    .item.main {
+        background: #337FD2;
+        .icon {
+            margin-top: 5px;
+        }
+    }
+}
+
+.horizontal-menu .item .list-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    z-index: 1;
+    color: #000;
+    background: #F9F9F9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+    ul {
+        margin:0;
+        padding:0;
+        list-style: none;
+        font-weight: bold;
+        font-size: 14px;
+
+        li {
+            border-bottom: 1px solid #DADADA;
+            padding: 16px 26px;
+        }
+
+        li:hover {
+            color: #337FD2;
+            background-color: #fff;
+        }
+    }
+}
+
+.horizontal-menu .item:hover .list-menu {
+    display: block;
+}

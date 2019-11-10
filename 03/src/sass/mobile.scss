@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block !important;
+  }
+  header,
+  .line_2,
+  .horizontal-menu {
+    display: none !important;
+  }
+}
+
+.mobile {
+  display: none;
+  position: relative;
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: none;
+
+    .header {
+      background: #337fd2;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+
+      .close {
+        margin-right: 20px;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .list {
+      width: 100%;
+      background: #ffffff;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 15px 25px;
+        list-style-type: none;
+        border-bottom: 1px solid #dedede;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .menu.show {
+    display: block;
+  }
+  .inf {
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    .dots {
+        cursor: pointer;
+    }
+    .corzina {
+      display: flex;
+      align-items: center;
+
+      .elipse {
+        margin-right: 10px;
+      }
+    }
+
+    .rub {
+      font-weight: bold;
+      font-size: 14px;
+      color: #3b3b3b;
+    }
+    .search-icon {
+        margin-top: 5px;
+    }
+  }
+}

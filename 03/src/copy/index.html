@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Copy Me</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="mobile">
+		<div class="inf">
+			<div class="dots">
+				<img src="svg/Dots.svg" style="margin-right: 15px;" />
+			</div>
+			<div class="corzina">
+				<img src="svg/Korzina.svg" style="margin-right: 15px;" />
+				<div class="elipse">
+					<p class="text_numb">10</p>
+				</div>
+				<span class="rub">0,0 ₽</span>
+			</div>
+			<div class="search-icon"><img src="svg/SearchIcon.svg" /></div>
+
+		</div>
+		<div class="menu ">
+			<div class="header">
+				<div class="close">
+					<img src="svg/Close.svg" />
+				</div>
+				<span>Меню</span>
+			</div>
+			<div class="list">
+				<ul>
+					<li><span>Тележки для склад</span> <img src="svg/ArrowRight.svg" /></li>
+					<li><span>Тележки для склад</span> <img src="svg/ArrowRight.svg" /></li>
+					<li><span>Тележки для склад</span> <img src="svg/ArrowRight.svg" /></li>
+					<li><span>Тележки для склад</span> <img src="svg/ArrowRight.svg" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div class="city"><img src="svg/Vector.svg" />
+			<p1>Ваш город:</p1> Москва<img src="svg/Triangle.svg" class="triangle" />
+		</div>
+		<div class="mobile-icon"><img src="svg/Mobile.svg" />
+			<div>
+				<div class="nubbcifr">+7 (495) 677-17-79</div>
+			</div>
+		</div>
+		<div class="info">
+			<div class="adress">
+				<p1><b>Адрес магазина: </b></p1> г. Москва, Варшавское ш, д.68 к.3
+			</div>
+			<div>
+				<p1><b>График работы: </b></p1> с 9:00 до 21:00 без выходных
+			</div>
+		</div>
+		<div class="cabinet"><img src="svg/Cabinet.svg" />Личный кабинет</div>
+	</header>
+	<div>
+		<div class="line_2">
+			<div class="text_style">
+				<div class="text_1">
+					<p>Commerce</p>
+				</div>
+				<div class="text_2">
+					<p>простой слоган состоящий из шести слов</p>
+				</div>
+			</div>
+			<div class="mobile-icon"><img src="svg/Mobile.svg" />
+				<div>
+					<div class="nubbcifr">+7 (495) 677-17-79</div>
+					<div><a href="">Заказать звонок</a></div>
+				</div>
+			</div>
+			<div class="search">
+				<div class="search_text">Поиск по сайту</div>
+				<div><img src="svg/Search.svg" /></div>
+			</div>
+			<div style="display: flex;">
+				<img src="svg/Korzina.svg" style="margin-right: 15px;" />
+				<div class="elipse">
+					<p class="text_numb">10</p>
+				</div>
+			</div>
+			<div class="summa_rub">10 000 Ꝑ</div>
+		</div>
+
+
+		<div class="horizontal-menu">
+			<div class="item main">
+				<div class="icon">	<img src="svg/Menu.svg" style="margin-right: 15px;" /></div>
+				<span>Каталог товаров</span>
+				<div class="list-menu">
+					<ul>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<span>О компании</span>
+				<div class="list-menu">
+					<ul>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<span>Сотрудничество</span>
+				<div class="list-menu">
+					<ul>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+						<li>Доставка</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+					<span>Доставка и оплата</span>
+					<div class="list-menu">
+						<ul>
+							<li>Доставка</li>
+							<li>Доставка</li>
+							<li>Доставка</li>
+							<li>Доставка</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+						<span>Обзоры</span>
+						<div class="list-menu">
+							<ul>
+								<li>Доставка</li>
+								<li>Доставка</li>
+								<li>Доставка</li>
+								<li>Доставка</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+							<span>Контакты</span>
+							<div class="list-menu">
+								<ul>
+									<li>Доставка</li>
+									<li>Доставка</li>
+									<li>Доставка</li>
+									<li>Доставка</li>
+								</ul>
+							</div>
+						</div>
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function () {
+			$('.mobile .dots').click(function () {
+				$('.mobile .menu').addClass('show');
+			});
+			$('.mobile .close').click(function () {
+				$('.mobile .menu').removeClass('show');
+			});
+		})
+	</script>
+</body>
+
+</html>
